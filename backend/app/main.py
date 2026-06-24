@@ -17,6 +17,8 @@ app.add_middleware(
     allow_origins=[settings.frontend_url, "http://localhost:5173",
                    "https://mediai-git-main-ashishak2506.vercel.app",
                    "https://mediai-mxy3t9fah-ashishak2506.vercel.app",],
+
+    allow_origin_regex=r"https://mediai-.*-ashishak2506\.vercel\.app",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
